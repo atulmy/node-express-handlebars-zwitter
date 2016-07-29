@@ -1,0 +1,19 @@
+<header>
+    <h1>Zwitter</h1>
+
+    <a href="/">Home</a>
+    &bull;
+    <a href="/tweet">Tweet</a>
+
+    {{# if user._id }}
+        &bull;
+        <a href="/logout">Logout</a>
+        &bull;
+        {{ user.username }}
+    {{ else }}
+        &bull;
+        <a href="/login">Login</a>
+        &bull;
+        <a href="/register">Register</a>
+    {{/if}}
+</header>

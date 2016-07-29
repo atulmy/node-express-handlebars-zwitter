@@ -1,0 +1,9 @@
+<h2>Tweet to the world</h2>
+
+<form method="post" action="/tweet">
+    <div class="form-group">
+        <textarea class="form-control" rows="3" name="text" required="required" placeholder="What's on your mind {{ user.username }}?"></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-default">Send</button>
+</form>

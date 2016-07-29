@@ -1,0 +1,21 @@
+<h2>Login</h2>
+
+{{# if message }}
+    <div class="alert alert-info" role="alert">{{ message }}</div>
+{{/ if }}
+
+<form id="form-login" action="/login" method="post">
+    <div class="form-group">
+        <label for="user-username">Username</label>
+
+        <input type="text" name="username" class="form-control" id="user-username" placeholder="Eg: jonsnow" />
+    </div>
+
+    <div class="form-group">
+        <label for="user-password">Password</label>
+
+        <input type="password" name="password" class="form-control" id="user-password" placeholder="Password" />
+    </div>
+
+    <button type="submit" class="btn btn-default">Login</button>
+</form>

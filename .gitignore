@@ -1,0 +1,4 @@
+node_modules/
+client/static/bower_components/
+.DS_Store
+.idea

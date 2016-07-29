@@ -1,0 +1,13 @@
+<h2>Tweets</h2>
+
+{{# each tweets }}
+    <div class="panel panel-default">
+        <div class="panel-body">
+            {{ text }}
+        </div>
+
+        <div class="panel-footer">
+            {{ userId }} &bull; {{ niceTime createdAt }}
+        </div>
+    </div>
+{{/each}}
