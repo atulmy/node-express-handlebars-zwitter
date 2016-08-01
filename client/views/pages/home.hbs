@@ -10,4 +10,10 @@
             {{ userId }} &bull; {{ niceTime createdAt }}
         </div>
     </div>
+{{ else }}
+    <div class="panel panel-default">
+        <div class="panel-body">
+            No tweets yet. <a href="/tweet">Click here</a> to Tweet.
+        </div>
+    </div>
 {{/each}}
