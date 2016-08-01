@@ -1,7 +1,5 @@
 {
-  "name": "express-mongoose-handlebars",
-  "description": "",
-  "main": "index.js",
+  "name": "zwitter",
   "authors": [
     "atulmy <atul.12788@gmail.com>"
   ],
