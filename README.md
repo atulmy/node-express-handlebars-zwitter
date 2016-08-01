@@ -18,7 +18,7 @@ A very basic clone of Twitter using NodeJS, Express, Mongoose and Handlebars
 - Login / Register
 
 ## Setup
-- Clone repo `git clone git@github.com:atulmy/nodejs-zwitter.git` and `cd zwitter`
+- Clone the repository `git clone git@github.com:atulmy/nodejs-zwitter.git zwitter` and `cd zwitter`
 - Install NPM modules `npm install`
-- Install Bower Components `cd client/static/` and `bower install`
+- Install Bower Components `bower install`
 - Run Node server `npm start`
