@@ -1,6 +1,17 @@
 # Node JS App - Zwitter
 A very basic clone of Twitter using NodeJS, Express, Mongoose and Handlebars
 
+## Packages Used
+- body-parser
+- cookie-parser
+- express
+- express-handlebars
+- jsonwebtoken
+- moment
+- mongoose
+- morgan
+- nodemon
+
 ## Features
 - List all tweets
 - Post a tweet (after logging in)
