@@ -4,9 +4,9 @@ let mongoose = require('mongoose');
 
 // Tweet Collection
 let TweetSchema = mongoose.Schema({
-    text: String,
-    userId: String,
-    createdAt: Date
+  text: String,
+  userId: String,
+  createdAt: Date
 });
 let Tweet = mongoose.model('tweets', TweetSchema);
 
