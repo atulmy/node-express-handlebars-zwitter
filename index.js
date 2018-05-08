@@ -1,13 +1,15 @@
 'use strict';
 
 // Imports
-let express = require('express');
-let exphbs = require('express-handlebars');
-let mongoose = require('mongoose');
-let bodyParser = require('body-parser');
-let cookieParser = require('cookie-parser');
-let jwt = require('jsonwebtoken');
-let morgan = require('morgan');
+const express = require('express');
+const exphbs = require('express-handlebars');
+const bodyParser = require('body-parser');
+const cookieParser = require('cookie-parser');
+const jwt = require('jsonwebtoken');
+const morgan = require('morgan');
+
+// Database
+const db = require('./server/database');
 
 // Collections
 let User = require('./models/users');
@@ -39,16 +41,6 @@ let hbs = exphbs.create({
 
 app.engine('.hbs', hbs.engine);
 app.set('view engine', '.hbs');
-//app.enable('view cache');
-
-// Mongoose
-// Config
-mongoose.connect('mongodb://localhost/zwitter');
-let db = mongoose.connection;
-db.on('error', console.error.bind(console, 'connection error:'));
-db.once('open', function () {
-  console.log('LOGGED | MongoDB Connected - ' + new Date());
-});
 
 // Router
 let routerPublic = express.Router();
@@ -203,10 +195,10 @@ app.use(routerPublic);
 app.use(routerLoggedin);
 
 // Boot Server
-let server = app.listen(3000, () => {
-  let host = server.address().address;
+let index = app.listen(3000, () => {
+  let host = index.address().address;
 
-  let port = server.address().port;
+  let port = index.address().port;
 
   console.log('Server running on http://%s:%s', host, port);
 });

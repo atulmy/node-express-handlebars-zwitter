@@ -5,23 +5,23 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "nodemon index.js"
   },
   "author": "",
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git://github.com/atulmy/nodejs-zwitter.git"
+    "url": "git://github.com/atulmy/node-express-handlebars-zwitter"
   },
   "dependencies": {
-    "body-parser": "^1.15.2",
+    "body-parser": "^1.18.2",
     "cookie-parser": "^1.4.3",
-    "express": "^4.14.0",
+    "express": "^4.16.3",
     "express-handlebars": "^3.0.0",
-    "jsonwebtoken": "^8.1.1",
-    "moment": "^2.14.1",
-    "mongoose": "^5.0.4",
-    "morgan": "^1.7.0",
-    "nodemon": "^1.10.0"
+    "jsonwebtoken": "^8.2.1",
+    "moment": "^2.22.1",
+    "mongoose": "^5.0.17",
+    "morgan": "^1.9.0",
+    "nodemon": "^1.17.4"
   }
 }
